@@ -1,11 +1,98 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <script>
+      // let callback = (data, notify) => {
+      //     console.log(notify, data)
+      // }
+
+      // function getTodo(id) {
+
+      //     return new Promise((resolve, reject) => {
+      //         var request = new XMLHttpRequest();
+      //         request.onreadystatechange = function() {
+      //             if (this.readyState == 4 && this.status == 200) {
+      //                 //callback('Success', this.responseText)
+      //                 resolve(JSON.parse(this.responseText))
+      //             }
+
+      //             if (this.readyState == 4 && this.status != 200) {
+      //                 //callback('Fail', undefined)
+      //                 reject(this.status)
+      //             }
+      //         };
+      //         request.open("GET", `https://jsonplaceholder.typicode.com/todos/${id}`, true);
+      //         request.send();
+      //     })
+
+      // }
+
+      // getTodo(1).then(data => {
+      //     console.log(`Success`, data)
+      //     return getTodo(2)
+      // })
+      // .then(data2 => {
+      //     console.log(`Success`, data2)
+      // })
+
+      // .catch(err => {
+      //     console.log(`Fail: `, err)
+      // })
+
+      // fetch('https://jsonplaceholder.typicode.com/todos/10')
+      // .then(response => {
+      //     return response.json()
+      // })
+      // .then(data => {
+      //     console.log(data)
+      // })
+
+      // const getData = async (id) => {
+      //     let response = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+
+      //     if(response && response.status != 200) {
+      //         throw new Error('Fail ' + response.status)
+      //     }
+
+      //     let data = await response.json()
+      //     return data;
+
+      // }
+
+      const getData = async (id) => {
+        try {
+          let response = await fetch(
+            `https://jsonplaceholder.typicode.com/todos/${id}`
+          );
+
+          if (response && response.status != 200) {
+            throw new Error("Fail " + response.status);
+          }
+
+          let data = await response.json();
+          return data;
+        } catch (e) {
+          console.log(`Check catch error: `, e.message);
+        }
+      };
+
+      getData("156")
+        .then((data) => {
+          if (data != null) {
+            console.log(`Success`, data);
+          }
+          return getData("157");
+        })
+        .then((data2) => {
+          if (data2 != null) {
+            console.log(`Success`, data2);
+          }
+        });
+    </script>
+  </body>
 </html>

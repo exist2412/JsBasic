@@ -1,0 +1,456 @@
+{
+    "data": {
+        "color_main": "#2E3191",
+        "color_main2": "#202155",
+        "color_main3": "#C9252C",
+        "color_main4": "#0F127E",
+        "color_main5": "#070A71",
+        "color_main6": "#fc3928",
+        "color_main7": "#f2f3f5",
+        "section": {
+            "footer": {
+                "title": "Headquarters",
+                "pay": "logo-f.png",
+                "footer_section_contact": [
+                    {
+                        "enable": true,
+                        "heading": "Office at Hoang Dieu port",
+                        "address": "27 Le Hong Phong, Tra An Ward, Binh Thuy District, City. Can Tho",
+                        "phone": "+84292 3841198",
+                        "email": "sales@theptaydo.com"
+                    },
+                    {
+                        "enable": true,
+                        "heading": "Office in Can Tho",
+                        "address": "44, CMT8, Cai Khe Ward, Ninh Kieu District, Can Tho City.",
+                        "phone": "+84.787 65 65 65",
+                        "email": "sales@theptaydo.com"
+                    }
+                ],
+                "footer_section_info": [
+                    {
+                        "enable": true,
+                        "content": "Business registration certificate No.: 1800156657"
+                    },
+                    {
+                        "enable": true,
+                        "heading": "dated: ",
+                        "content": "June 27, 2008 by Can Tho city Department of Planning and Investment"
+                    },
+                    {
+                        "enable": true,
+                        "heading": "General manager:",
+                        "content": "Huynh Trung Quang"
+                    }
+                ],
+                "footer_section_link": [
+                    {
+                        "enable": true,
+                        "heading": "Policy",
+                        "limit": 5,
+                        "menu_id": "3"
+                    }
+                ],
+                "footer_section_social": [
+                    {
+                        "enable": true,
+                        "icon": "icon\/fb.png",
+                        "link": "https:\/\/www.facebook.com\/CongtyThepTayDo",
+                        "title": "Facebook"
+                    },
+                    {
+                        "enable": true,
+                        "icon": "icon\/gg.png",
+                        "link": "javascript:void(0)",
+                        "title": "Google Plus"
+                    },
+                    {
+                        "enable": true,
+                        "icon": "icon\/email.png",
+                        "link": "mailto:congtytheptaydo@gmail.com",
+                        "title": "Email"
+                    },
+                    {
+                        "enable": true,
+                        "icon": "icon\/youtube.png",
+                        "link": "https:\/\/www.youtube.com\/@congtytheptaydo",
+                        "title": "Youtube"
+                    }
+                ],
+                "footer_section_social_2": [
+                    {
+                        "enable": true,
+                        "icon": "fa-brands fa-facebook-f",
+                        "link": "https:\/\/www.facebook.com\/theptaydo"
+                    },
+                    {
+                        "enable": true,
+                        "icon": "fa-solid fa-phone-flip",
+                        "link": "tel:(0292) 3 841 822"
+                    },
+                    {
+                        "enable": true,
+                        "icon": "fa-brands fa-facebook-messenger",
+                        "link": "https:\/\/www.facebook.com\/messages\/t\/713278658692105"
+                    }
+                ],
+                "copyright": "Copyright © 2022 TAY DO STEEL. ALL RIGHTS RESERVED"
+            },
+            "header": {
+                "open": "0787 65 65 65",
+                "open2": "LOGO-en.png",
+                "open3": "Lot No. 45, Road No. 2, Tra Noc 1 Industrial Park, Tra Noc Ward, Binh Thuy District, Can Tho City",
+                "menu": {
+                    "menu_id": "4"
+                }
+            },
+            "slider": {
+                "enable": true,
+                "slider_item": [
+                    {
+                        "enable": true,
+                        "image": "slider\/Thep-tay-do-merry.png",
+                        "description": ""
+                    },
+                    {
+                        "enable": true,
+                        "image": "slider\/thep%20tay%20do%205.png",
+                        "description": ""
+                    },
+                    {
+                        "enable": true,
+                        "image": "slider\/z3901464052548_18a3f3f0a9124b50764d545b016b8e6b.jpg",
+                        "description": ""
+                    },
+                    {
+                        "enable": true,
+                        "image": "slider\/thep_3.png",
+                        "description": ""
+                    },
+                    {
+                        "enable": true,
+                        "image": "logo\/thep%20tay%20do%209.png",
+                        "description": ""
+                    },
+                    {
+                        "enable": true,
+                        "image": "slider\/thep_1.png",
+                        "description": ""
+                    },
+                    {
+                        "enable": true,
+                        "image": "slider\/thep_2.png",
+                        "description": ""
+                    },
+                    {
+                        "enable": true,
+                        "image": "logo\/thep%20tay%20do%208.png",
+                        "description": ""
+                    }
+                ],
+                "slider_item_2": [
+                    {
+                        "enable": true,
+                        "image": "slider\/1.png"
+                    },
+                    {
+                        "enable": true,
+                        "image": "slider\/2.png"
+                    },
+                    {
+                        "enable": true,
+                        "image": "slider\/3.png"
+                    }
+                ]
+            },
+            "vission": {
+                "enable": true,
+                "heading": "Vision",
+                "content": "Tay Do Steel is known as the leading enterprise in the field of manufacturing and trading construction steel products in the Mekong Delta.",
+                "heading_2": "Mission",
+                "content_2": "Tay Do Steel gradually expands its production and business scale <br> Supplying to the market products such as Steel Billet and Steel Scrap for the steel rolling industry <br> Quality is the goal and benefit of the user"
+            },
+            "gallery": {
+                "enable": true,
+                "title": "Pictures and Videos",
+                "id": 6
+            },
+            "product_featured": {
+                "sidebar": {
+                    "enable": true,
+                    "title": "Our <ins>Products<\/ins>",
+                    "product_group": [
+                        {
+                            "enable": true,
+                            "collection_id": "2",
+                            "limit": 3,
+                            "sort_type": "manual"
+                        }
+                    ]
+                }
+            },
+            "news_featured": [
+                {
+                    "enable": true,
+                    "title": "News",
+                    "limit": 6,
+                    "blog_id": "1",
+                    "sort_type": "published-desc"
+                }
+            ],
+            "product_single": {
+                "sidebar": {
+                    "hinh": "banner_breacrumb.png",
+                    "enable_search": true,
+                    "product_group": [
+                        {
+                            "enable": true,
+                            "heading": "Featured Products",
+                            "collection_id": "5",
+                            "limit": 3,
+                            "sort_type": "published-desc"
+                        }
+                    ],
+                    "img_group": [
+                        {
+                            "enable": true,
+                            "img": "banner\/thep-cuon-3.png"
+                        },
+                        {
+                            "enable": true,
+                            "img": "banner\/f53827f7184ce212bb5d-1590722756.jpg"
+                        },
+                        {
+                            "enable": true,
+                            "img": "banner\/63.jpg"
+                        },
+                        {
+                            "enable": true,
+                            "img": "banner\/DSC00918.jpg"
+                        }
+                    ],
+                    "enable_category": false,
+                    "enable_filter": false,
+                    "enable_tagcloud": false
+                }
+            },
+            "collection": {
+                "sidebar": {
+                    "enable_search": true,
+                    "enable_category": true,
+                    "product_group": [
+                        {
+                            "enable": true,
+                            "heading": "New Products",
+                            "collection_id": "0",
+                            "limit": 3,
+                            "sort_type": "manual"
+                        }
+                    ],
+                    "img_group": [
+                        {
+                            "enable": true,
+                            "img": "banner\/b-product.png"
+                        },
+                        {
+                            "enable": true,
+                            "img": "banner\/f53827f7184ce212bb5d-1590722756.jpg"
+                        },
+                        {
+                            "enable": true,
+                            "img": "banner\/63.jpg"
+                        },
+                        {
+                            "enable": true,
+                            "img": "banner\/DSC00918.jpg"
+                        }
+                    ],
+                    "enable_filter": false,
+                    "enable_tagcloud": false,
+                    "html_block_custom": [
+                        {
+                            "enable": false
+                        }
+                    ]
+                }
+            },
+            "blog": {
+                "sidebar": {
+                    "hinh": "banner\/4495280_1008_imm.jpg",
+                    "enable_search": true,
+                    "enable_category": true,
+                    "img_group": [
+                        {
+                            "enable": true,
+                            "img": "banner\/b-blog.png"
+                        }
+                    ],
+                    "article_group": [
+                        {
+                            "enable": true,
+                            "heading": "Latest news",
+                            "blog_id": "1",
+                            "limit": 4,
+                            "sort_type": "updated-desc"
+                        }
+                    ],
+                    "html_block_custom": [
+                        {
+                            "heading": "CUSTOM HTML BLOCK",
+                            "subtitle": "This is a custom sub-title.",
+                            "content_html": "<p> Content HTML <strong>custom <\/strong><\/p>",
+                            "enable": false
+                        }
+                    ],
+                    "enable_tagcloud": false
+                }
+            },
+            "article_single": {
+                "sidebar": {
+                    "hinh": "sl5.jpg",
+                    "enable_search": false,
+                    "enable_category": false,
+                    "enable_tagcloud": false,
+                    "img_group": [
+                        {
+                            "enable": true,
+                            "img": "banner\/b-detail-blog.png"
+                        }
+                    ],
+                    "article_group": [
+                        {
+                            "enable": true,
+                            "heading": "Latest New",
+                            "blog_id": "1",
+                            "limit": 4,
+                            "sort_type": "updated-desc"
+                        }
+                    ]
+                }
+            },
+            "map": {
+                "address": "124 Nguyễn Đệ",
+                "lat": 10.049354,
+                "lng": 105.762406
+            },
+            "contact": {
+                "enable": true,
+                "map": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3928.7742316148224!2d105.77345631411124!3d10.035480275177509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a08818d7aad00f%3A0x9a113ec0d5d019f2!2zMTg0IFRy4bqnbiBIxrBuZyDEkOG6oW8sIEFuIFBow7osIE5pbmggS2nhu4F1LCBD4bqnbiBUaMahLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1564715560100!5m2!1svi!2s\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
+                "hinh": "sl5.jpg"
+            },
+            "brands": {
+                "enable": true,
+                "title": "Partners",
+                "limit": 10,
+                "blog_id": "15",
+                "sort_type": "published-desc",
+                "info_item": [
+                    {
+                        "enable": true,
+                        "image": "logo\/hamaco.png"
+                    },
+                    {
+                        "enable": true,
+                        "image": "logo\/phuoc-nguyen.png"
+                    },
+                    {
+                        "enable": true,
+                        "image": "logo\/tien-minh.png"
+                    },
+                    {
+                        "enable": true,
+                        "image": "logo\/hamaco.png"
+                    },
+                    {
+                        "enable": true,
+                        "image": "logo\/phuoc-nguyen.png"
+                    },
+                    {
+                        "enable": true,
+                        "image": "logo\/tien-minh.png"
+                    }
+                ]
+            },
+            "brands_2": {
+                "enable": true,
+                "heading": "<ins>Quality<\/ins> Products",
+                "title": "Quality certification",
+                "title_2": "Prize",
+                "image": "gioi-thieu\/z3845645389330_40070a6252e32fec2c577b87d42a7bab.jpg",
+                "info_item": [
+                    {
+                        "enable": true,
+                        "image": "logo\/jis-LOGO.jpg"
+                    },
+                    {
+                        "enable": true,
+                        "image": "logo\/iso-1.png"
+                    },
+                    {
+                        "enable": true,
+                        "image": "logo\/quacert.png"
+                    },
+                    {
+                        "enable": true,
+                        "image": "logo\/iso-2.png"
+                    }
+                ],
+                "info_item_2": [
+                    {
+                        "enable": true,
+                        "image": "logo\/thuong-hieu-viet.png"
+                    },
+                    {
+                        "enable": true,
+                        "image": "logo\/hvnclc.png"
+                    }
+                ]
+            },
+            "newsletter": {
+                "enable": true,
+                "heading": "CONTACT",
+                "description": "Contact us now for advice on investment cooperation products",
+                "content": "Contact phone number",
+                "sdt": "(0292) 3 841 822"
+            },
+            "intro": {
+                "enable": true,
+                "title": "ABOUT <ins>US<\/ins>",
+                "content": "<p>Tay Do Steel is known as a leading enterprise in the field of manufacturing and trading construction steel products in the Mekong Delta.<\/p>\r\n<p>Established in 1995. and came into operation in 1997 with an initial capacity of 120,000T\/year <\/p>\r\n<div>In early 2022, Tay Do Steel gradually expanded its production and business scale.<\/div>\r\n\r\nWith the quality criterion as the goal and the benefit of the user as the vital element of the Enterprise, the steel products of TAY DO STEEL have been and are being invested by many investors. trusted to use for key projects in the Mekong Delta. \r\n",
+                "image": "gioi-thieu\/z3925337497423_16cdc0821ed354add3239797beeec766.jpg",
+                "link": "\/gioi-thieu-cong-ty"
+            },
+            "contact_left": {
+                "description": "Hello, thank you for your interest in the services and products of Tay Do Steel"
+            },
+            "recruit": {
+                "enable": true,
+                "title": "CAREER OPPORTUNITIES",
+                "image": "breacumb_td.jpg"
+            }
+        },
+        "content_home": [
+            "slider",
+            "home_service",
+            "home_banner",
+            "product_featured",
+            "home_info",
+            "home_promo",
+            "home_trademark",
+            "news_featured"
+        ],
+        "trademark": [
+            {
+                "enable": true,
+                "title": "sales@theptaydo.com"
+            }
+        ]
+    },
+    "info": {
+        "name": "Porto 5",
+        "alias": "porto-5",
+        "code": "porto-5",
+        "data_version": "2.0.0",
+        "theme_version": "1.0.0"
+    }
+}
