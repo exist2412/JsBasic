@@ -29,7 +29,7 @@ class ListTodo extends React.Component {
         this.setState({
             listCoins: [...this.state.listCoins, coin]
         })
-        toast.success("Thành công!");
+        toast.success("Thêm Thành Công!");
     }
 
     delCoin = (coin) => {
@@ -38,15 +38,33 @@ class ListTodo extends React.Component {
         this.setState({
             listCoins: list_item
         })
-        toast.success("Xóa thành công!");
+        toast.info("Xóa thành công!");
     }
 
     editCoin = (coin) => {
         let { listCoins, selectItem } = this.state;
+        
         let isEmpty = Object.keys(selectItem).length === 0;
+        
         if (isEmpty === false && coin.short_name === selectItem.short_name) {
             
+            let listCoins_map = [...listCoins];
+
+            let objIndex = listCoins.findIndex((obj => obj.short_name === coin.short_name));
+
+            listCoins_map[objIndex].name = selectItem.name;
+
+            if (listCoins_map[objIndex].name.length > 0) {
+                this.setState({
+                    listCoins: listCoins_map,
+                    selectItem: {}
+                })
+                toast.success("Lưu Thành Công!");
+            } else {
+                toast.warn("Vui lòng nhập tên!");
+            }
             return;
+            
         }
         
         this.setState({
@@ -71,53 +89,56 @@ class ListTodo extends React.Component {
         return (
             <>
                 <div className="container">
-                    <AddCoins 
-                        addCoin={this.addCoin}
-                    />
-                    <div className="read_block">
-                        <ul>
-                            {
-                                listCoins && listCoins.length > 0 &&
-                                listCoins.map((item, index) => {
-                                    return(
-                                        <li key={item.name}>
-                                            { isEmpty === true ?
-                                                <span className="title">{index + 1} - {item.name} ({item.short_name}) - {item.price}</span>
-                                                : 
-                                                <>
-                                                    {
-                                                        selectItem.short_name === item.short_name ?
-                                                        <span className="title">{index + 1} - 
-                                                            <input className="submit_in" type="text" value={selectItem.name} 
-                                                                onChange={(event)=> this.handleEditSelectItem(event)}
-                                                            /> ({item.short_name}) - {item.price}</span>
-                                                        :
-                                                        <span className="title">{index + 1} - 
-                                                            {item.name} ({item.short_name}) - {item.price}</span>
-                                                    }
-                                                </>
-                                                
-                                            }
-                                        
-                                            <button type="submit" className="btn"
-                                                onClick={() => {this.editCoin(item)}}
-                                            >
-                                                <span>
-                                                    { isEmpty === false && selectItem.short_name === item.short_name ? 
-                                                        'Save': 'Edit'
-                                                    }
-                                                </span>
-                                            </button>
-                                            <button type="submit" className="btn"
-                                                onClick={() => this.delCoin(item)}
-                                            ><span>Delete</span></button>
-                                        </li>
-                                    )
-                                })
-                            }
-                            
-                        </ul>
+                    <div className="section">
+                        <AddCoins 
+                            addCoin={this.addCoin}
+                        />
+                        <div className="read_block">
+                            <ul>
+                                {
+                                    listCoins && listCoins.length > 0 &&
+                                    listCoins.map((item, index) => {
+                                        return(
+                                            <li key={item.name}>
+                                                { isEmpty === true ?
+                                                    <span className="title">{index + 1} - {item.name} ({item.short_name}) - {item.price}</span>
+                                                    : 
+                                                    <>
+                                                        {
+                                                            selectItem.short_name === item.short_name ?
+                                                            <span className="title">{index + 1} - 
+                                                                <input className="submit_in" type="text" value={selectItem.name} 
+                                                                    onChange={(event)=> this.handleEditSelectItem(event)}
+                                                                /> ({item.short_name}) - {item.price}</span>
+                                                            :
+                                                            <span className="title">{index + 1} - 
+                                                                {item.name} ({item.short_name}) - {item.price}</span>
+                                                        }
+                                                    </>
+                                                    
+                                                }
+                                            
+                                                <button type="submit" className="btn"
+                                                    onClick={() => {this.editCoin(item)}}
+                                                >
+                                                    <span>
+                                                        { isEmpty === false && selectItem.short_name === item.short_name ? 
+                                                            'Save': 'Edit'
+                                                        }
+                                                    </span>
+                                                </button>
+                                                <button type="submit" className="btn"
+                                                    onClick={() => this.delCoin(item)}
+                                                ><span>Delete</span></button>
+                                            </li>
+                                        )
+                                    })
+                                }
+                                
+                            </ul>
+                        </div>
                     </div>
+                    
                 </div>
             </>
         )
