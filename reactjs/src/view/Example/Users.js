@@ -1,6 +1,7 @@
 import React from "react";
 import axios from 'axios';
 import { Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 class Users extends React.Component {
 
@@ -20,6 +21,10 @@ class Users extends React.Component {
           }
     }
 
+    ViewDetail = (user) => {
+        this.props.history.push(`/user/${user.id}`)
+    }
+
     render() {
         let { users }  = this.state;
         return(
@@ -31,11 +36,9 @@ class Users extends React.Component {
                                 users && users.length > 0 &&
                                 users.map((item, index) => {
                                     return(
-                                        <li key={item.id} className="flex-50">
-                                            <Link to="/about">
-                                                <img src={item.avatar} alt={item.last_name} />
-                                                <span> {item.last_name} </span>
-                                            </Link>          
+                                        <li key={item.id} className="flex-50" onClick={() => this.ViewDetail(item)}>
+                                            <img src={item.avatar} alt={item.last_name} />
+                                            <span> {item.last_name} </span>        
                                         </li>
                                     )
                                 })
@@ -49,4 +52,4 @@ class Users extends React.Component {
     }
 }
 
-export default Users;
+export default withRouter(Users);

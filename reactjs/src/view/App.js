@@ -14,7 +14,7 @@ import NavigationBar from './Navigation/NavigationBar';
 import Home from './Example/Home';
 import About from './Example/About';
 import Users from './Example/Users';
-
+import User from './Example/User';
 
 function App() {
   return (
@@ -39,6 +39,9 @@ function App() {
               </Route>
               <Route path="/users">
                 <Users />
+              </Route>
+              <Route path="/user/:id">
+                <User />
               </Route>
             </Switch>
             
