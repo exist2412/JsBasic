@@ -30,7 +30,7 @@ class Users extends React.Component {
         return(
             <div className="container">
                 <div className="section">
-                <div className="read_block">
+                    <div className="read_block">
                         <ul className="row">
                             {
                                 users && users.length > 0 &&
